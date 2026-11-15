@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="midnight-dark"] {
+  --athar-bg: #060a09;
+  --athar-bg-elevated: #0b1411;
+  --athar-surface: rgba(12, 26, 21, 0.78);
+  --athar-surface-solid: #0d1d17;
+  --athar-emerald: #0a2e22;
+  --athar-emerald-bright: #10b981;
+  --athar-gold: #d4af37;
+  --athar-gold-soft: #f0d788;
+  --athar-text: #f5f3ec;
+  --athar-text-muted: #9eb0a8;
+  --athar-border: rgba(212, 175, 55, 0.22);
+  --athar-border-subtle: rgba(255, 255, 255, 0.08);
+  --athar-glow: rgba(16, 185, 129, 0.14);
+}
+
+[data-theme="royal-emerald-gold"] {
+  --athar-bg: #041510;
+  --athar-bg-elevated: #072219;
+  --athar-surface: rgba(10, 46, 34, 0.8);
+  --athar-surface-solid: #0a2e22;
+  --athar-emerald: #0f4c3a;
+  --athar-emerald-bright: #34d399;
+  --athar-gold: #e2be4a;
+  --athar-gold-soft: #f8e29b;
+  --athar-text: #faf7ef;
+  --athar-text-muted: #aac4b9;
+  --athar-border: rgba(226, 190, 74, 0.3);
+  --athar-border-subtle: rgba(255, 255, 255, 0.1);
+  --athar-glow: rgba(212, 175, 55, 0.16);
+}
+
+[data-theme="midnight-black"] {
+  --athar-bg: #010202;
+  --athar-bg-elevated: #090c0b;
+  --athar-surface: rgba(12, 15, 14, 0.88);
+  --athar-surface-solid: #0d1110;
+  --athar-emerald: #0c2c22;
+  --athar-emerald-bright: #10b981;
+  --athar-gold: #d4af37;
+  --athar-gold-soft: #f2d98d;
+  --athar-text: #f7f6f2;
+  --athar-text-muted: #949e99;
+  --athar-border: rgba(212, 175, 55, 0.24);
+  --athar-border-subtle: rgba(255, 255, 255, 0.07);
+  --athar-glow: rgba(212, 175, 55, 0.1);
+}
+
+[data-theme="light"] {
+  --athar-bg: #f6f2e8;
+  --athar-bg-elevated: #fcfaf4;
+  --athar-surface: rgba(255, 253, 248, 0.9);
+  --athar-surface-solid: #ffffff;
+  --athar-emerald: #0a3c2c;
+  --athar-emerald-bright: #059669;
+  --athar-gold: #a67c15;
+  --athar-gold-soft: #7c5b0b;
+  --athar-text: #10201a;
+  --athar-text-muted: #4b6158;
+  --athar-border: rgba(166, 124, 21, 0.28);
+  --athar-border-subtle: rgba(16, 32, 26, 0.1);
+  --athar-glow: rgba(10, 60, 44, 0.08);
+}
+
+[data-theme="pure-white"] {
+  --athar-bg: #ffffff;
+  --athar-bg-elevated: #f8faf9;
+  --athar-surface: rgba(250, 252, 251, 0.96);
+  --athar-surface-solid: #ffffff;
+  --athar-emerald: #0a3b2b;
+  --athar-emerald-bright: #047857;
+  --athar-gold: #9e7412;
+  --athar-gold-soft: #715109;
+  --athar-text: #091511;
+  --athar-text-muted: #4a5c55;
+  --athar-border: rgba(158, 116, 18, 0.28);
+  --athar-border-subtle: rgba(9, 21, 17, 0.09);
+  --athar-glow: rgba(10, 59, 43, 0.06);
+}
+
+[data-theme="royal-purple"] {
+  --athar-bg: #0a0612;
+  --athar-bg-elevated: #140c24;
+  --athar-surface: rgba(26, 15, 45, 0.8);
+  --athar-surface-solid: #190f2e;
+  --athar-emerald: #2a174c;
+  --athar-emerald-bright: #a78bfa;
+  --athar-gold: #e0b94b;
+  --athar-gold-soft: #f5db8c;
+  --athar-text: #f7f4fc;
+  --athar-text-muted: #b0a3c7;
+  --athar-border: rgba(224, 185, 75, 0.25);
+  --athar-border-subtle: rgba(255, 255, 255, 0.09);
+  --athar-glow: rgba(167, 139, 250, 0.14);
+}
+
+[data-theme="ocean-blue"] {
+  --athar-bg: #040d15;
+  --athar-bg-elevated: #081a29;
+  --athar-surface: rgba(10, 31, 49, 0.8);
+  --athar-surface-solid: #0b2236;
+  --athar-emerald: #0d3550;
+  --athar-emerald-bright: #38bdf8;
+  --athar-gold: #d8b446;
+  --athar-gold-soft: #f2da8a;
+  --athar-text: #f1f7fb;
+  --athar-text-muted: #98b4c7;
+  --athar-border: rgba(216, 180, 70, 0.24);
+  --athar-border-subtle: rgba(255, 255, 255, 0.09);
+  --athar-glow: rgba(56, 189, 248, 0.14);
+}
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--athar-bg);
+  color: var(--athar-text);
+  font-family: var(--font-cairo), var(--font-tajawal), system-ui, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-quran {
+  font-family: var(--font-amiri), "Traditional Arabic", serif;
+  line-height: 2.25;
+}
+
+.font-display {
+  font-family: var(--font-amiri), var(--font-cairo), serif;
+}
+
+/* Sacred Islamic Geometric Pattern Backdrop */
+.athar-geo-pattern {
+  background-image: radial-gradient(circle at 20% 10%, var(--athar-glow), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(212, 175, 55, 0.08), transparent 40%),
+    url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4AF37' stroke-opacity='0.06' stroke-width='0.8'%3E%3Cpolygon points='36,4 45,15 58,15 58,28 68,36 58,44 58,57 45,57 36,68 27,57 14,57 14,44 4,36 14,28 14,15 27,15'/%3E%3Ccircle cx='36' cy='36' r='10'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.athar-card {
+  background: var(--athar-surface);
+  border: 1px solid var(--athar-border);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 12px 36px -14px rgba(0, 0, 0, 0.45);
+}
+
+.athar-gold-gradient {
+  background: linear-gradient(135deg, #f5df96 0%, #d4af37 52%, #a27c1b 100%);
+}
+
+.athar-gold-text {
+  background: linear-gradient(135deg, #f8e5a7 0%, #d4af37 55%, #b88c1e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.pb-safe {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

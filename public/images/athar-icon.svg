@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <radialGradient id="iconBg" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#0E3C2D" />
+      <stop offset="65%" stop-color="#081C16" />
+      <stop offset="100%" stop-color="#060A09" />
+    </radialGradient>
+    <linearGradient id="iconGold" x1="120" y1="80" x2="390" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F7E3A1" />
+      <stop offset="48%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#8C6C14" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#iconBg)" />
+  <rect x="28" y="28" width="456" height="456" rx="92" stroke="url(#iconGold)" stroke-opacity="0.35" stroke-width="3" />
+  <polygon points="256,64 312,120 392,120 392,200 448,256 392,312 392,392 312,392 256,448 200,392 120,392 120,312 64,256 120,200 120,120 200,120" stroke="#D4AF37" stroke-opacity="0.22" stroke-width="2" />
+  <path d="M294 128C221 132 164 192 164 266C164 342 226 404 302 404C344 404 381 385 406 355C385 366 361 372 336 372C263 372 204 313 204 240C204 191 231 148 271 125C279 125 287 126 294 128Z" fill="url(#iconGold)" />
+  <path d="M332 168L340 192L364 200L340 208L332 232L324 208L300 200L324 192L332 168Z" fill="#F7E3A1" />
+</svg>
